@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nla Portfolio</title>
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- boxicon cdn -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- dark mode listen  -->
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+
+<body class="gradient-bg min-h-screen text-gray-800 transition-colors duration-300 xl:mx-10">
+
+    <!-- nav bar  -->
+    <nav id="navbar" class="container mx-auto p-6 rounded-b-4xl shadow-md fixed left-6 sm:left-8 md:left-12 lg:left-18 xl:left-0 top-0 dark:shadow-gray-400/30 z-100">
+        <!-- flex container  -->
+        <div class="container mx-auto pr-6 flex items-center justify-between">
+
+            <!-- logo -->
+            <div>
+                <a href="index.html" class="text-2xl font-bold dark:text-white/90">nla.</a>
+            </div>
+
+            <!-- menu items -->
+            <div class="hidden md:flex text-lg text-stone-600 dark:text-white/90">
+                <a href="index.html" class="nav-link rounded-3xl px-3 py-0.5 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-4xl">home</a>
+                <a href="about.html" class="nav-link rounded-3xl px-3 py-0.5 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-4xl">about</a>
+                <a href="skills.html" class="nav-link rounded-3xl px-3 py-0.5 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-4xl">skills</a>
+                <a href="experience.html" class="nav-link rounded-3xl px-3 py-0.5 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-4xl">experience</a>
+                <a href="projects.html" class="nav-link rounded-3xl px-3 py-0.5 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-4xl">projects</a>
+                <a href="contact.html" class="nav-link rounded-3xl px-3 py-0.5 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-4xl">contact</a>
+            </div>
+
+            <!-- dark-light button  -->
+            <button id="darkModeToggle" class="text-3xl cursor-pointer dark:text-white/90">
+                <span id="theme-toggle-light-icon"><i class='bx bx-sun'></i></span>
+                <span id="theme-toggle-dark-icon" class="hidden"><i class='bx bxs-moon'></i></span>
+            </button>
+
+            <!-- Hamburger Icon for mobile -->
+            <button id="menu-btn" class="hamburger block md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile menu  -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute font-bold bg-teal-300/80 backdrop-blur-lg rounded-sm drop-shadow-md py-4 mt-10 space-y-2 flex-col items-center self-end left-6 right-6 sm:w-auto sm:self-center hidden dark:bg-teal-800/80 dark:text-white/90">
+                <a href="index.html" class="nav-link w-full text-center rounded-xl px-3 py-2 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-3xl">home</a>
+                <a href="about.html" class="nav-link w-full text-center rounded-xl px-3 py-2 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-3xl">about</a>
+                <a href="skills.html" class="nav-link w-full text-center rounded-xl px-3 py-2 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-3xl">skills</a>
+                <a href="experience.html" class="nav-link w-full text-center rounded-xl px-3 py-2 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-3xl">experience</a>
+                <a href="projects.html" class="nav-link w-full text-center rounded-xl px-3 py-2 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-3xl">projects</a>
+                <a href="contact.html" class="nav-link w-full text-center rounded-xl px-3 py-2 hover:bg-gray-300/40 hover:shadow-xs focus:bg-gray-200/60 focus:shadow-xs focus:rounded-3xl">contact</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- hero section  -->
+    <section id="hero" class="mx-auto mt-50 min-h-screen">
+        <div class="text-5xl font-bold text-center mx-auto py-4 sm:my-6 dark:text-white/90">I'm Naing Lin Aung.</div>
+
+        <!-- flex container  -->
+        <div class="container flex mx-auto justify-center items-center px-6 py-4 md:flex-row flex-col-reverse">
+            <!-- left item  -->
+            <div class="flex flex-col mx-auto space-y-6 text-center md:w-3/5 md:text-left">
+                <h2 class="max-w-full text-3xl text-teal-700 dark:text-teal-500 text-center md:text-4xl md:text-left">
+                    I'm a <span class="font-bold text-teal-900 dark:text-teal-100/80 border-r-2 txtAni">Freelance Developer.</span>
+                </h2>
+                <p class="dark:text-teal-50/90">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia ex repellat quasi eius iusto autem tempora maiores. Ab necessitatibus saepe vero similique possimus ducimus quam aut ipsam enim. Cumque.
+                </p>
+                <!-- social icons -->
+                <div class="text-2xl space-x-2 dark:text-white/90">
+                    <a href="www.linkedin.com/in/naing-lynn-aung"><i class='bx bxl-linkedin hover:text-gray-500 dark:hover:text-gray-300/80'></i></a>
+                    <a href="https://github.com/nainglynnag"><i class='bx bxl-github hover:text-gray-500 dark:hover:text-gray-300/80'></i></a>
+                    <a href="https://www.facebook.com/nainglynnaung.1644211607080901"><i class='bx bxl-facebook-circle hover:text-gray-500 dark:hover:text-gray-300/80' ></i></a>
+                    <a href="https://t.me/me_NL"><i class='bx bxl-telegram hover:text-gray-500 dark:hover:text-gray-300/80' ></i></i></a>
+                </div>
+                <!-- button  -->
+                <div class="my-2 max-md:flex max-md:justify-center seeMoreBtn">
+                    <a href="about.html" class="w-[220px] px-6 py-3 text-white bg-gray-500 rounded-full shadow-xl flex items-center dark:hover:bg-gray-400/80 dark:shadow-gray-400/50 dark:shadow-xs">See more about me <i class='bx bx-right-arrow-alt pl-0.5 arrow'></i></a>
+                </div>
+            </div>
+            <!-- image  -->
+            <div class="md:w-2/5 flex justify-center my-6 relative z-0">
+                <img class="w-50 h-50 rounded-full shadow-lg dark:shadow-gray-300 dark:shadow-sm" src="src/image/linkedin_profile.png" alt="profile-img">
+                <span class="absolute bg-teal-400 p-4 rounded-3xl shadow-sm right-[-1.5rem] md:right-0 lg:right-[2.8rem] xl:right-[5rem] 2xl:right-[8rem] top-0 animate-bounce">Hi There!
+                </span>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="bg-gray-300/30 py-6 md:rounded-4xl">
+        <div class="container mx-auto mt-3 px-6 py-3 text-gray-600 text-center space-y-4 flex justify-between flex-col md:flex-row dark:text-white/80">
+            <div>
+                <p>Designed and Developed by nla.</p>
+            </div>
+            
+            <div>
+                <p><span id="autoyear">2025</span> &copy; nainglinaung</p>
+            </div>
+
+            <!-- social icons -->
+            <div class="text-xl space-x-2">
+                <a href="www.linkedin.com/in/naing-lynn-aung"><i class='bx bxl-linkedin hover:text-gray-400'></i></a>
+                <a href="https://github.com/nainglynnag"><i class='bx bxl-github hover:text-gray-400'></i></a>
+                <a href="https://www.facebook.com/nainglynnaung.1644211607080901"><i class='bx bxl-facebook-circle hover:text-gray-400' ></i></a>
+                <a href="https://t.me/me_NL"><i class='bx bxl-telegram hover:text-gray-400' ></i></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
