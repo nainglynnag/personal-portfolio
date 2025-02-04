@@ -25,7 +25,7 @@ A modern personal portfolio website built with HTML, Tailwind CSS v4, and JavaSc
 git clone https://github.com/nainglynnag/personal-portfolio.git
 
 2. Install dependencies:
-npm run watch
+npm install
 
 3. Start Tailwind CSS in watch mode:
 npm run watch
