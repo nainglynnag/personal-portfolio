@@ -71,6 +71,10 @@
   .nav-link{
     transition: border-radius 0.3s ease-in-out;
   }
+
+  .nav-link[data-active="true"]{
+    @apply bg-gray-200/60 shadow-xs;
+  }
   
   /* about page education items  */
   .educationItems .eduTitle .toggleSign::after{
@@ -94,6 +98,8 @@
     bottom: -20px;
     @apply w-0.5 bg-gray-400/30 absolute left-0 top-6 dark:bg-gray-300/30;
   }
+
+  
   
 }
 
@@ -103,6 +109,10 @@
 
 .seeMoreBtn:hover .arrow{
   @apply translate-x-2;
+}
+
+.skill-card:hover .skill-name {
+  @apply opacity-100;
 }
 
 @variant dark (&:where(.dark, .dark *));

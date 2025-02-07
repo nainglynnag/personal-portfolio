@@ -76,28 +76,64 @@
     <section id="skills" class="mx-auto mt-40 mb-15 min-h-60 max-h-screen">
 
         <!-- flex container  -->
-        <div class="container flex mx-auto justify-center items-center px-6 py-4 md:flex-row flex-col">
+        <div class="container flex mx-auto justify-center items-center px-6 py-4 flex-col md:flex-row">
             
             <div class="flex flex-col mx-auto space-y-6 text-center md:text-left">
                 <h2 class="max-w-full text-3xl font-bold text-teal-900 text-center md:text-4xl dark:text-teal-400">
                     professional skillset.
                 </h2>
-                <p class="mt-4 dark:text-teal-100/90">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia ex repellat quasi eius iusto autem tempora maiores. Ab necessitatibus saepe vero similique possimus ducimus quam aut ipsam enim. Cumque.
+                <p class="mt-4 text-center dark:text-teal-100/90">
+                    A collection of skillsets I've learnt before and still in progress...
                 </p>
 
                 <!-- logos -->
-                <div class="container md:w-8/12 bg-teal-200/50 backdrop-blur-md rounded-4xl mx-auto p-10 flex justify-center items-center">
-                    <div class="container mx-auto grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 gap-3 space-y-2 dark:text-white/90">
-                        <div class="w-fit text-5xl border-1 rounded-2xl md:ml-5 p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-html5'></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl md:ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-css3' ></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl md:ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-tailwind-css' ></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl md:ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-bootstrap' ></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl md:ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-javascript' ></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl md:ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-php' ></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl md:ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-python'></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl md:ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-github' ></i></div>
-                        <div class="w-fit h-17 text-5xl border-1 rounded-2xl md:ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-jquery' ></i></div>
+                <div class="container bg-teal-200/50 backdrop-blur-md rounded-4xl mx-auto px-10 pt-10 pb-8 flex justify-center items-center">
+                    <div class="container mx-auto grid grid-cols-3 sm:grid-cols-5 gap-3 space-x-12 space-y-4  ml-1.5 sm:ml-2.5 md:ml-6 xl:ml-7 dark:text-white/90">
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-html5 mt-1.5'></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">HTML5</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-css3 mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">CSS3</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-tailwind-css mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">Tailwind</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-bootstrap mt-1.5'></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">Bootstrap</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-javascript mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">Javascript</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-php mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">PHP</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-python mt-1.5'></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">Python</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-github mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">GitHub</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-jquery mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">JQuery</span>
+                        </div>
                     </div>
                 </div>
 
@@ -112,24 +148,44 @@
     <section id="skills" class="mx-auto my-20 min-h-60 max-h-screen">
 
         <!-- flex container  -->
-        <div class="container flex mx-auto justify-center items-center px-6 py-4 md:flex-row flex-col">
+        <div class="container flex mx-auto justify-center items-center px-6 py-4 flex-col md:flex-row">
             
             <div class="flex flex-col mx-auto space-y-6 text-center md:text-left">
                 <h2 class="max-w-full text-3xl font-bold text-teal-900 text-center md:text-4xl dark:text-teal-400">
                     tools I used.
                 </h2>
-                <p class="mt-4 dark:text-teal-100/90">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia ex repellat quasi eius iusto autem tempora maiores. Ab necessitatibus saepe vero similique possimus ducimus quam aut ipsam enim. Cumque.
+                <p class="mt-4 text-center dark:text-teal-100/90">
+                    A collection of tools I've used before and still in progress....
                 </p>
 
                 <!-- logos -->
-                <div class="container md:w-8/12 bg-teal-200/50 backdrop-blur-md rounded-4xl mx-auto p-10 flex justify-center items-center">
-                    <div class="container mx-auto grid grid-cols-3 xs:grid-cols-4 md:grid-cols-5 gap-3 space-y-2 dark:text-white/90">
-                        <div class="w-fit text-5xl border-1 rounded-2xl ml-5 p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-visual-studio' ></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-adobe' ></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-microsoft' ></i></div>
-                        <div class="w-fit text-5xl border-1 rounded-2xl ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-google' ></i></div>
-                        <div class="w-fit h-17 text-5xl border-1 rounded-2xl ml-5 text-center p-2 hover:text-gray-500 cursor-pointer dark:hover:text-gray-400"><i class='bx bxl-figma' ></i></div>                        
+                <div class="container bg-teal-200/50 backdrop-blur-md rounded-4xl mx-auto px-10 pt-10 pb-8 flex justify-center items-center">
+                    <div class="container mx-auto grid grid-cols-3 sm:grid-cols-5 gap-3 space-x-12 space-y-4  ml-1.5 sm:ml-2.5 md:ml-6 xl:ml-7 dark:text-white/90">
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-visual-studio mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">VS Code</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-adobe mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">Adobe CC</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-microsoft mt-1.5'></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">MS Office</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-google mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">Google Suite</span>
+                        </div>
+
+                        <div class="w-24 h-20 text-center text-5xl border-1 rounded-2xl p-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300/80 overflow-hidden transition-opacity duration-800 relative skill-card">
+                            <i class='bx bxl-figma mt-1.5' ></i>
+                            <span class="absolute w-full text-sm text-center bg-white/40 backdrop-blur-md dark:bg-gray-400/60 text-teal-900 dark:text-white left-0 bottom-0 opacity-0 skill-name">Figma</span>
+                        </div>
                     </div>
                 </div>
 
@@ -140,14 +196,14 @@
     </section>
 
 
-    <footer class="bg-gray-300/30 py-6 md:rounded-4xl">
-        <div class="container mx-auto mt-3 px-6 py-3 text-gray-600 text-center space-y-4 flex justify-between flex-col md:flex-row dark:text-white/80">
+    <footer class="bg-gray-300/30 py-4 md:rounded-4xl">
+        <div class="container mx-auto mt-3 px-6 text-gray-600 text-center space-y-4 flex justify-between flex-col md:flex-row dark:text-white/80">
             <div>
                 <p>Designed and Developed by nla.</p>
             </div>
             
             <div>
-                <p><span id="autoyear">2025</span> &copy; nainglinaung</p>
+                <p>&copy; <span id="autoyear">2025.</span> nainglinaung</p>
             </div>
 
             <!-- social icons -->

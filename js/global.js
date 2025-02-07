@@ -1,11 +1,28 @@
 // menu 
 const btn = document.getElementById('menu-btn');
 const nav = document.getElementById('menu');
+const navLinks = document.querySelectorAll('.nav-link');
 
 btn.addEventListener('click', ()=>{
     btn.classList.toggle('open');
     nav.classList.toggle('flex');
     nav.classList.toggle('hidden');
+});
+
+// nav items active status
+document.addEventListener('DOMContentLoaded', function() {
+  // Get current page URL
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  
+  // Remove active state from all links
+  navLinks.forEach(link => {
+      link.setAttribute('data-active', 'false');
+      
+      // Set active state for current page
+      if (link.getAttribute('href') === currentPage) {
+          link.setAttribute('data-active', 'true');
+      }
+  });
 });
 
 // navbar scroll blur
