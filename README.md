@@ -25,9 +25,9 @@ A modern personal portfolio website built with HTML, Tailwind CSS v4, and JavaSc
 ```bash
 git clone https://github.com/nainglynnag/personal-portfolio.git
 ```
-2. Install dependencies:
+2. Change file path:
 ```bash
-npm install
+cd personal-portfolio
 ```
 
 3. Start Tailwind CSS in watch mode:
